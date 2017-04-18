@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+      <head>
+
+            <center>
+
+                    <style>
+
+                           /* Here is the bubble style example */
+
+                           div{
+                               width: 120px;
+                               height: 80px;
+                               background: skyblue;
+                               position: relative;
+                               border-radius: 10px;
+                              }
+                           div:before{
+                               content:"";
+                               position: absolute;
+                               right: 100%;
+                               top: 13px;
+                               width: 0;
+                               height: 0;
+                               border-top: 13px solid transparent;
+                               border-right: 26px solid skyblue;
+                               border-bottom: 13px solid transparent;
+                              }
+
+                   </style>
+
+                           <!-- HTML5 shim for IE8 support of HTML5 elements -->
+                           <!--[if lt IE 9]>
+                           <script src=“https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js”></script>
+                           <![endif]-->
+
+                   <body>
+
+                         <div></div>
+                         <div:before></div:before>
+
+                   </body>
+
+            </center>
+
+      </head>
+
+</html>
